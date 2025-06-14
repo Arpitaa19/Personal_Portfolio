@@ -29,18 +29,18 @@ const Projects = () => {
               data-aos-duration="1000"
               data-aos-once="false"
               key={project.id}
-              className="group relative flex flex-col flex-wrap h-80 w-[95%] mx-auto shadow-md md:shadow-lg rounded-xl "
+              className="group relative h-80 w-[95%] mx-auto shadow-md md:shadow-lg rounded-xl overflow-hidden"
             >
               <img
                 src={project.image}
                 alt={project.name}
-                className="h-80 rounded-xl"
+                className="h-80 w-full object-cover rounded-xl transition-transform duration-300 group-hover:scale-105"
               />
-              <div className="absolute flex flex-col justify-center items-center bottom-0 left-0 right-0 h-0 overflow-hidden group-hover:h-full transition-[height_0.5s] duration-500 bg-darkblue rounded-xl px-3">
-                <h3 className="text-xl font-medium text-white  mt-5 mb-2">
-                  {project.name}
-                </h3>
-                <p className="px-2 text-lg-base text-white">{project.description}</p>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-darkblue bg-opacity-95 flex flex-col justify-center items-center text-white opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 ease-in-out px-3 text-center rounded-xl">
+                <h3 className="text-xl font-medium mt-2 mb-2">{project.name}</h3>
+                <p className="px-2 text-base">{project.description}</p>
                 <div className="flex flex-wrap items-center gap-3 mt-3">
                   {project?.icons?.map((Icon, index) => (
                     <div className="rounded-full p-2" key={index}>
@@ -48,7 +48,7 @@ const Projects = () => {
                     </div>
                   ))}
                 </div>
-                <div className="flex gap-7 justify-center items-center my-7 text-2xl">
+                <div className="flex gap-7 justify-center items-center my-5 text-2xl">
                   <a
                     className="text-darkblue text-xl bg-white rounded-full p-2"
                     href={project.github}
@@ -68,6 +68,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
+
           ))}
         </div>
       </div>
