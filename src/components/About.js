@@ -28,7 +28,7 @@ const About = () => {
             data-aos-once="false"
             className="mb-10 md:mb-0 flex justify-center"
           >
-            <div className="relative w-[280px] h-[280px]">
+            <div className="relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] md:w-[260px] md:h-[260px] lg:w-[280px] lg:h-[280px]">
               {/* Background rhombus that fills corners */}
               <div className="absolute inset-0 rotate-[45deg] rounded-[50px] bg-gradient-to-b from-[#0D0221] via-[#141C2D] to-[#102552] z-0"></div>
 
