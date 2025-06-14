@@ -20,7 +20,7 @@ const ExperienceData = [
     ],
   },
   {
-    title: "Software Develper Inten",
+    title: "Software Develper Intern",
     company: "Webriy",
     duration: "May 2025 - Present",
     description: [
