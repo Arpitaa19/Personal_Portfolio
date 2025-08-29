@@ -30,7 +30,7 @@ const Projects = () => {
               data-aos="zoom-in-up"
               data-aos-duration="1000"
               data-aos-once="false"
-              className="group relative w-[95%] h-80 mx-auto bg-darkblue p-1 shadow-md md:shadow-lg rounded-xl overflow-hidden"
+className="group relative w-[95%] h-64 mx-auto bg-darkblue p-1 shadow-md md:shadow-lg rounded-xl overflow-hidden"
             >
               <div className="w-full h-full bg-darkblue p-[3px] rounded-xl">
                 <div className="w-full h-full aspect-square flex items-center justify-center bg-white rounded-lg">
@@ -57,22 +57,23 @@ const Projects = () => {
                 </div>
                 <div className="flex gap-5 justify-center items-center mt-4 text-2xl">
                   <a
-                    className="text-darkblue text-xl bg-white rounded-full p-2"
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-darkblue text-xl bg-white rounded-full p-2 flex items-center justify-center"
                   >
                     <FaGithub />
                   </a>
-                  <a
-                    className="text-darkblue text-xl bg-white rounded-full p-2"
+                  {/* <a
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-darkblue text-xl bg-white rounded-full p-2 flex items-center justify-center"
                   >
                     <FaExternalLinkAlt />
-                  </a>
+                  </a> */}
                 </div>
+
               </div>
             </div>
 
