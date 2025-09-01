@@ -32,7 +32,7 @@ const ProjectsData = [
     id: "2",
     name: "CodeSphere: Real Time Editor",
     image: editorImg,
-  icons: [SiReact, SiTailwindcss, SiNodedotjs, SiSocketdotio],
+    icons: [SiReact, SiTailwindcss, SiNodedotjs, SiSocketdotio],
     description: "This project allows multiple users to edit code together in real time with smooth collaboration and synchronization.",
     github: "https://github.com/Arpitaa19/CodeSphere_Editor",
   },

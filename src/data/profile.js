@@ -9,7 +9,7 @@ const ProfileData = {
     "focused on building smart, user-friendly web solutions.",
   ],
   resume:
-    "https://drive.google.com/file/d/1fbTGTk9kpFwIUSbkXXlALTpE1U_Or7Gl/view?usp=sharing",
+    "https://drive.google.com/file/d/1Bau9v3LNzpt1BTMKYCcu7cBtUpM_EuWo/view?usp=sharing",
 };
 
 export default ProfileData;
